@@ -32,13 +32,27 @@
       outline: none;
       padding: 20px;
       -webkit-tap-highlight-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .subtext {
+      font-size: 0.75rem;
+      opacity: 0.6;
+      letter-spacing: 0.2em;
+      font-weight: 400;
     }
   </style>
 </head>
 <body>
 
   <!-- SIMPLE TEXT BUTTON -->
-  <button class="redirect-btn" onclick="openYouTubeApp()">ryoji mario jumpspot</button>
+  <button class="redirect-btn" onclick="openYouTubeApp()">
+    <span>ryoji mario jumpspot</span>
+    <span class="subtext">opens youtube app</span>
+  </button>
 
   <script>
     // =========================================================================
